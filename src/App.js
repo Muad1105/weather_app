@@ -119,7 +119,7 @@ const App = () => {
   const handleSearch = (city) => {
     const currentCity = capitalizeString(city);
     setInputCity(currentCity);
-    const geoLocation = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=ae07d43fb3ec4022d478e086669f218d`;
+    const geoLocation = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=ae07d43fb3ec4022d478e086669f218d`;
 
     axios
       .get(geoLocation)
