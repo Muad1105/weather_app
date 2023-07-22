@@ -8,6 +8,7 @@ import { notification } from "antd";
 import "./app.scss";
 import Nav from "./components/navigation/Nav";
 import Footer from "./components/footer/Footer";
+import Toggle from "./components/toggle/Toggle";
 
 const App = () => {
   const [inputCity, setInputCity] = useState("");
@@ -174,14 +175,7 @@ const App = () => {
             onSubmit={handleSearch}
             removeErr={() => setCityNotFound(false)}
           />
-          <button
-            className="toggle-btn"
-            onClick={() =>
-              setUnit(unit === "celsius" ? "fahrenheit" : "celsius")
-            }
-          >
-            Toggle Unit ({unit === "celsius" ? "°C" : "°F"})
-          </button>
+          <Toggle setUnit={setUnit} unit={unit} />
           {weatherData.cur && (
             <CurrentWeather city={inputCity} data={weatherData} unit={unit} />
           )}
