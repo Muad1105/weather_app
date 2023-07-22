@@ -67,22 +67,19 @@ $desktop: 1280px;
         background-color: rgb(4, 47, 112);
       }
     }
-    @media screen and (max-width: $mobile) {
-      display: none;
-      flex-direction: column;
-      align-items: flex-start;
-    }
     @media screen and (max-width: $desktop) {
       display: flex;
+    }
+    @media screen and (max-width: $mobile) {
+      display: none;
     }
   }
 
   .show-nav {
     @media screen and (max-width: $mobile) {
-      display: block;
-    }
-    @media screen and (max-width: $desktop) {
       display: none;
+      display: flex;
+      flex-direction: column;
     }
   }
 }
