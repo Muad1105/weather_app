@@ -1,7 +1,9 @@
-#The app is adjusted to  mobile:480px, desktop:1280px.
+#The app aims at displaying the current weather and forecasted weather for 5 days of the input loation.
 
-#Clone the repo and install the packages. 
+#Clone the repository and and move with installing the packages.
 
-#You will be directed to page with input entry for the preferred location to check for the weather.
+#Home page will have an input section, you can enter the preffered location to display the weather conditions.
 
-#After Entering required the location the climate and climate forecast for 5 days will be displayed.
+#You will be displayed the present weather and furthet 5 maore days of weather forecast.
+
+#Have used openweathermap api's to get the weather data in the app.
