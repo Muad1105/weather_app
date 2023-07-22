@@ -1,0 +1,33 @@
+$mobile: 480px;
+
+.weather-forecast-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5vh;
+
+  .current-weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: 2px solid rgb(0, 102, 255, 0.7);
+    border-radius: 5px;
+
+    @media screen and (max-width: $mobile) {
+      width: 59vw;
+      height: auto;
+    }
+
+    &:hover {
+      box-shadow: 3px 3px 13px rgb(0, 102, 255, 0.7);
+    }
+
+    .weather-card {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5vh;
+    }
+  }
+}

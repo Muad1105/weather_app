@@ -1,0 +1,66 @@
+$mobile: 480px;
+
+.footer-container {
+  height: 100%;
+  background-color: #6198ff;
+  color: #282c34;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  transition: 0.1s all;
+  margin-top: 46vh;
+  padding: 2vh 10vh;
+  @media screen and (max-width: $mobile) {
+    height: 100%;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: space-around;
+    gap: 15vw;
+
+    @media screen and (max-width: $mobile) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2vw;
+    }
+
+    .title {
+      font-size: 25px;
+      font-weight: bold;
+      color: #282c34;
+    }
+    .social {
+      display: flex;
+      gap: 1.6vw;
+      font-size: 20px;
+      color: #282c34;
+    }
+
+    .icon {
+      cursor: pointer;
+      &:hover {
+        color: #c3cde0;
+      }
+    }
+  }
+  .email a {
+    text-decoration: none;
+    color: #282c34;
+  }
+}
+.copywright {
+  font-size: 10px;
+  text-align: center;
+  color: #535559;
+  height: 100%;
+  @media screen and (max-width: $mobile) {
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+  }
+}
